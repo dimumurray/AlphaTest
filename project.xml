@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+    <meta title="AlphaTest" package="com.blackwoodarts.tests" version="1.0.0" company="BlackwoodArts" />
+    <app main="tests.alphaTest.Main" path="Export" file="Main" />
+
+    <window width="512" height="512" if="desktop"/>
+    <window width="0" height="0" if="html5" />
+
+    <window orientation="landscape" vsync="true" if="cpp" />
+    <window fps="60" hardware="true" allow-shaders="true" require-shaders="true" depth-buffer="true" stencil-buffer="true" />
+
+    <source path="src" />
+
+    <haxelib name="format" if="html5" />
+    <haxelib name="openfl" />
+    <haxelib name="away3d" />
+
+    <assets path="assets/icons" exclude="openfl.svg" />
+
+    <assets path="assets/images" rename="images" include="*"/>
+
+    <icon path="assets/icons/openfl.svg" />
+
+    <haxedef name="source-map-content" if="html5" />
+    <haxedef name="dom" if="html5" />
+
+    <android minimum-sdk-version="10" />
+</project>
